@@ -23,6 +23,7 @@
             />
 
         <android.support.design.widget.TextInputLayout
+            android:id="@+id/controlNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
@@ -46,6 +47,87 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/areaCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_correo"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/controlCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:errorEnabled="true"
+            android:layout_marginLeft="32dp"
+            >
+
+            <EditText
+                android:id="@+id/campoCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/areaTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imgTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_telefono"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/controlTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:errorEnabled="true"
+            android:layout_marginLeft="32dp"
+            >
+
+            <EditText
+                android:id="@+id/campoTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -54,6 +136,7 @@
 
 
         <Button
+            android:id="@+id/btnCancelarXML"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -61,6 +144,7 @@
             />
 
         <Button
+            android:id="@+id/btnAceptarXML"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
