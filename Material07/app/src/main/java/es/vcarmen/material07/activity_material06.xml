@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/miLayout"
+    android:orientation="vertical"
+    tools:context="es.vcarmen.material06.Material06"
+    android:background="@color/colorAccent"
+    >
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:background="#cccccc"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"/>
+
+
+    <Button
+        android:id="@+id/btnAniadir"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Añadir Tab"
+        android:layout_weight="0.75"
+        />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Eliminar Tab"
+        android:layout_weight="0.75"
+        />
+
+</LinearLayout>

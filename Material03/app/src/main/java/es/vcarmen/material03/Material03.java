@@ -10,12 +10,19 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 
+
+/**
+ *  Actividad de FloatingActionButton
+ */
+
+
+
 public class Material03 extends AppCompatActivity implements View.OnClickListener, Serializable {
 
     private Animation abrir,cerrar,derecha,izquierda;
-    private FloatingActionButton fab1, fab2, fab3;
-    boolean abierto     = false;
-
+    private FloatingActionButton fab1, fab2, fab3, fabUno, fabDos, fabTres;
+    boolean abierto         = false;
+    boolean abiertoVertical = false;
 
 
     @Override
@@ -23,9 +30,15 @@ public class Material03 extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_material03);
 
+        //FAB verticales
         fab1 = (FloatingActionButton) findViewById(R.id.fabSuperior);
         fab2 = (FloatingActionButton) findViewById(R.id.fabMedio);
         fab3 = (FloatingActionButton) findViewById(R.id.fabInferior);
+
+        //Fab Horizontales
+        fabUno = (FloatingActionButton) findViewById(R.id.fabUno);
+        fabDos = (FloatingActionButton) findViewById(R.id.fabDos);
+        fabTres = (FloatingActionButton) findViewById(R.id.fabTres);
 
 
         abrir     = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.abrir);
@@ -37,17 +50,58 @@ public class Material03 extends AppCompatActivity implements View.OnClickListene
         fab2.setOnClickListener(this);
         fab3.setOnClickListener(this);
 
+
+        fabUno.setOnClickListener(this);
+        fabDos.setOnClickListener(this);
+        fabTres.setOnClickListener(this);
+
+
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+
             case R.id.fabSuperior:
                 Toast.makeText(Material03.this, "Fab Superior tocado", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.fabMedio:
-                Toast.makeText(Material03.this, "Fab Medio tocado", Toast.LENGTH_SHORT).show();
+
+            case R.id.fabUno:
+                Toast.makeText(Material03.this, "Fab Uno", Toast.LENGTH_SHORT).show();
                 break;
+
+            case R.id.fabDos:
+                Toast.makeText(Material03.this, "Fab Dos", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.fabTres:
+                Toast.makeText(Material03.this, "Fab Dos", Toast.LENGTH_SHORT).show();
+                break;
+
+            //QUEDA POR REVISAR
+            case R.id.fabMedio:
+                if(abiertoVertical){
+                    fabUno.startAnimation(cerrar);
+                    fabDos.startAnimation(cerrar);
+                    fabTres.startAnimation(cerrar);
+                    fabTres.setClickable(true);
+                    fabDos.setClickable(true);
+                    fabUno.setClickable(true);
+                    abiertoVertical = false;
+                } else{
+                    fabUno.startAnimation(abrir);
+                    fabDos.startAnimation(abrir);
+                    fabTres.startAnimation(abrir);
+                    fabTres.setClickable(false);
+                    fabDos.setClickable(false);
+                    fabUno.setClickable(false);
+                    abiertoVertical= true;
+                }
+                break;
+
+
+
+
             case R.id.fabInferior:
                 if(abierto){
                     fab1.startAnimation(cerrar);

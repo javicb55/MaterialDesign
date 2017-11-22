@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f091ef"
+    android:orientation="vertical"
+    tools:context="es.vcarmen.material08.Material08">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#daa986"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/texto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oh-oh-oh Feliz Navidad"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#00FFFF"
+                />
+
+            <ImageView
+                android:id="@+id/imagenNavidad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/feliz_navidad"
+                android:scaleType="centerCrop"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+             />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:layout_gravity="bottom|center"
+                android:numStars="5"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#daa986"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/texto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burriquito Sabanero"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#00FFFF"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/burriquito_sabanero"
+                android:scaleType="centerCrop"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                />
+
+            <RatingBar
+                android:id="@+id/rating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:layout_gravity="bottom|center"
+                android:numStars="5"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

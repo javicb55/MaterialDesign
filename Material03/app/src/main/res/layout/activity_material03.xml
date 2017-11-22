@@ -35,6 +35,43 @@
         />
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_action_settings"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="100dp"
+        app:fabSize="normal"
+        app:backgroundTint="#FF0000"
+        android:visibility="invisible"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_action_settings"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="100dp"
+        app:fabSize="normal"
+        app:backgroundTint="#FFFF00"
+        android:visibility="invisible"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_action_settings"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="100dp"
+        app:fabSize="normal"
+        app:backgroundTint="#FF0000"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabInferior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
