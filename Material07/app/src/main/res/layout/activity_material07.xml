@@ -20,26 +20,17 @@
         android:background="#cccccc"
         app:tabIndicatorColor="#ff7700"
         app:tabSelectedTextColor="#ff7700"
-        android:layout_weight="1"
+        android:layout_weight="0.70"
         app:tabGravity="fill"
         app:tabMode="fixed"
         android:minHeight="?attr/actionBarSize"/>
 
 
-
-    <FrameLayout
-        android:id="@+id/contenedor"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        >
-
-    </FrameLayout>
-
     <android.support.v4.view.ViewPager
         android:id="@+id/contenedorViewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 

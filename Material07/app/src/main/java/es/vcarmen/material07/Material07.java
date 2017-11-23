@@ -9,11 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class Material07 extends AppCompatActivity {
 
     Fragment fragment;
     ViewPager paginador;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,16 +40,18 @@ public class Material07 extends AppCompatActivity {
 
         paginador = (ViewPager) findViewById(R.id.contenedorViewPager);
 
-        /*
-        Adaptador adaptador = new Adaptador(getSupportFragmentManager(), miTabLayout.getTabCount());
+        Adaptador adaptador = new Adaptador(getSupportFragmentManager(),miTabLayout.getTabCount());
         paginador.setAdapter(adaptador);
         paginador.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(miTabLayout));
-        */
 
 
-        miTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        /*miTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+
+                Toast.makeText(Material07.this, "Antes del switch", Toast.LENGTH_SHORT).show();
+
+
 
                 switch (tab.getPosition()){
 
@@ -82,6 +86,6 @@ public class Material07 extends AppCompatActivity {
 
             }
         });
-
+            */
     }
 }
