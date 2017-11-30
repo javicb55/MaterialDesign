@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearPrincipal"
+    tools:context="es.vcarmen.material09.Material09"
+    android:background="@color/colorAccent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#cccccc"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+       <LinearLayout
+           android:id="@+id/linear1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <android.support.v7.widget.Toolbar
+               android:id="@+id/toolbar1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#cccccc"
+               app:popupTheme="@style/Theme.AppCompat.Light"
+               app:subtitleTextAppearance="@style/subtitulo"
+               app:theme="@style/tarjeta"
+               app:titleTextAppearance="@style/titulo"
+               >
+
+           </android.support.v7.widget.Toolbar>
+
+           
+
+           
+           
+           <ImageView
+               android:id="@+id/imagen1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/guargo"
+               android:scaleType="centerCrop"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:onClick="tocado"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Detalle"
+                   android:layout_gravity="center"
+                   />
+
+               <ImageView
+                   android:id="@+id/imagen2"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.1"
+                   android:src="@mipmap/mas"
+                   android:background="@android:color/transparent"
+                   />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
