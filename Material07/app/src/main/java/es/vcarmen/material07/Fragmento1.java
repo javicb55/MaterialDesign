@@ -40,18 +40,9 @@ public class Fragmento1 extends Fragment {
         View mVista = inflater.inflate(R.layout.primero,container,false);
 
                 Wv = (WebView) mVista.findViewById(R.id.webView1);
-
-
-
-
                 Wv.loadUrl(url);
 
-
-
         return mVista;
-
-
-
 
     }
 

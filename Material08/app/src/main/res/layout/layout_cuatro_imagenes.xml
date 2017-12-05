@@ -1,48 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f091ef"
+    >
 
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         >
 
-        <LinearLayout
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#daa986"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/feliz_navidad"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/texto1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            >
+            android:layout_height="wrap_content"
+            android:text="Oh-oh-oh Feliz Navidad"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#00FFFF"
+            />
 
-            <ImageView
-                android:id="@+id/imagen1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/feliz_navidad"
-                android:scaleType="centerCrop"
-                />
-
-            <ImageView
-                android:id="@+id/imagen2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/burriquito_sabanero"
-                android:scaleType="centerCrop"
-                />
-
-        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#daa986"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/burriquito_sabanero"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="30dp"
+            />
 
 
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burriquito"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#00FFFF"
+            />
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#daa986"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/estrella"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estrellita"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="#00FFFF"
+            />
+
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#daa986"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imagen4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/belen"
+                android:layout_marginBottom="30dp"
+                />
+
+            <TextView
+                android:id="@+id/texto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Belén"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#00FFFF"
+                />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 
 
 </LinearLayout>

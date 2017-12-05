@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
+    <WebView
+        android:id="@+id/webView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#11EE99"
+        android:background="#EE1199"
         android:gravity="center"
-        android:text="SEGUNDO FRAGMENTO" />
+        />
 
 
 </LinearLayout>
